@@ -1,25 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.scss";
 
-function App() {
+const RegisterPc = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <div className='registerPc'>
+      <div className= 'Registracii'>
+        <p className= 'konstruktorBotov'>
+          Конструктор ботов
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+        <p
+          className= 'sub_title'
         >
-          Learn React
+          Для работы с нашим проектом Вам необходимо
+          авторизоваться. Зарегистрируйтесь или войдите в
+          свой аккаунт
+        </p>
+        <div className= 'polePochty'>
+          <p className= 'loginIliEmail'>
+            Логин или email
+          </p>
+          <div className= 'rectangle4'/>
+        </div>
+        <div className= 'flexWrapperOne'>
+          <div className= 'poleParol'>
+            <p className= 'parol'>Пароль</p>
+            <div className= 'rectangle4Two' />
+          </div>
+          <div className= 'poleParol'>
+            <p className= 'povtorParol'>
+              Повтор пароля
+            </p>
+            <div className= 'rectangle5' />
+          </div>
+        </div>
+        <button className= 'group1'>
+          <p className= 'zareg'>
+            Зарегистрироваться
+          </p>
+        </button>
+        <div className= 'group2'>
+          <div className= 'rectangle7'/>
+          <p className= 'ili'>или</p>
+          <div className= 'rectangle7' />
+        </div>
+        <a href = "./log.js"className= 'akk'>
+          Войдите в свой аккаунт
         </a>
-      </header>
+      </div>
     </div>
   );
-}
+};
 
-export default App;
+export default RegisterPc;
